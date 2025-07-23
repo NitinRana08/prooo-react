@@ -1,16 +1,25 @@
+import bullet from './assets/bullet.png'
 function App() {
-  const userName = 'nitin rana'
-  let a = 2
-  let v = 1
+  
   return (
     <div>
-      <h1>hello, {userName}</h1>
-      <p>{a+v}</p>
-      {/* <h2>{313+313+3131+13}</h2> */}
+      <h1>nitin rana</h1>
+      <div>
+        <img src={bullet} alt="nitin rana" className="bullet-img" />
+      </div>
 
-      <button onClick={()=>alert("hello")}>click</button>
+      <ul>
+        <li>
+          Invent new trffic light
+        </li>
+        <li>Rehearse a movie scene</li>
+        <li>improve the spectrum technology</li>
+      </ul>
+      <button onClick={()=>alert("function called")}>click me</button>
 
     </div>
+   
+   
   )
 }
 
