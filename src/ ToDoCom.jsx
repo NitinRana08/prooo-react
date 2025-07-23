@@ -1,8 +1,8 @@
 function ToDo() {
 
-    function callfun(){
-        alert("function called")
-    }
+    // function callfun(){
+    //     alert("function called")
+    // }
     return (
         <div>
             <h1>nitin rnana</h1>
@@ -13,7 +13,7 @@ function ToDo() {
                 <li>Rehearse a movie technology</li>
                 <li>improve the spectrum technology</li>
             </ul>
-            <button onClick={callfun}>Click Me</button>
+            <button onClick={()=>alert("hello")}>Click Me</button>
         </div>
     )
 }
