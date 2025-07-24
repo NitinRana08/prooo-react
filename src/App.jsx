@@ -1,14 +1,12 @@
-import ToDo from "./ ToDoCom";
 
+import Dog from "./Dog"
 function App() {
 
   return (
-    <>
-    {/* <ToDo /> */}
-   <h1>my nna dnf sdjkndsjksd</h1> 
-   <h2>j</h2>
-
-    </>
+   <div>
+   <Dog/>
+</div>
+   
 
   )
 }
