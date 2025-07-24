@@ -53,13 +53,23 @@ function Dog() {
 
 
 
+ let fruit = "apple"
 
+ let changeFruits=()=>{
+    fruit = 'banana'
+    console.log(fruit)
 
-
+ }
 
     return (
         <>
             {
+
+                <div> 
+                    <h1>hello</h1>
+                    <h1>{fruit}</h1>
+                    <button onClick={changeFruits}>click to change the fruit</button>
+                </div>
                 // <div>
                 //     <h1>enent and function call</h1>
                 //     {/* <button onClick={callFun}>click me </button> */}
