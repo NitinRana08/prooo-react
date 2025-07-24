@@ -3,13 +3,12 @@ import ToDo from "./ ToDoCom";
 function App() {
 
   return (
-    <div>
+    <>
     {/* <ToDo /> */}
-    <h1>hello
-      
-    </h1>
+   <h1>my nna dnf sdjkndsjksd</h1> 
+   <h2>j</h2>
 
-    </div>
+    </>
 
   )
 }
