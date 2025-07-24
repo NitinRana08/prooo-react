@@ -35,6 +35,7 @@ function Dog() {
         <>
             {
                 <div>
+                    {/* <h1>{JSON.stringify(userr)}</h1> */}
                     <h1>{userr.mail}</h1>
                     {/* <h1>{helllo}</h1> */}
                     <h1>nitin</h1>
