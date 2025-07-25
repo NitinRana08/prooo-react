@@ -41,35 +41,45 @@ function Dog() {
     // }
 
     // const arr = ['nitn', 'rana', 'hello']
-    // const path = "https://cdn.shopify.com/s/files/1/0086/0795/7054/files/Labrador.jpg?v=1645179151"
+    // const path = "https://cdn.shopify.com/s/files/1/0086/0795/7054/files/Labrador.jpg?v=164517915
+
+
+//  let fruit = "apple"
+
+//  let changeFruits=()=>{
+//     fruit = 'banana'
+//     console.log(fruit)
+
+//  }
 
 
 
+let fruit = "apple"
 
-
-
-
-
-
-
-
- let fruit = "apple"
-
- let changeFruits=()=>{
-    fruit = 'banana'
+let newFruit =()=>{
+    fruit = " banana"
     console.log(fruit)
+    
+}
 
- }
+
 
     return (
         <>
-            {
+            { 
+            <>
+                <h1>HOLA</h1>
+                <h1>{fruit}</h1>
+                <button onClick={newFruit}>change the fruit</button>
 
-                <div> 
-                    <h1>hello</h1>
-                    <h1>{fruit}</h1>
-                    <button onClick={changeFruits}>click to change the fruit</button>
-                </div>
+
+                </>
+
+                // <div> 
+                //     <h1>hello</h1>
+                //     <h1>{fruit}</h1>
+                //     <button onClick={changeFruits}>click to change the fruit</button>
+                // </div>
                 // <div>
                 //     <h1>enent and function call</h1>
                 //     {/* <button onClick={callFun}>click me </button> */}
