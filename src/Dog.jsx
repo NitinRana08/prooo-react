@@ -2,6 +2,8 @@
 //        alert(name)
 
 //     }
+// import { useState } from "react"
+import {useState} from "react"
 function Dog() {
 
     // function callFun(){
@@ -44,34 +46,45 @@ function Dog() {
     // const path = "https://cdn.shopify.com/s/files/1/0086/0795/7054/files/Labrador.jpg?v=164517915
 
 
-//  let fruit = "apple"
+    //  let fruit = "apple"
 
-//  let changeFruits=()=>{
-//     fruit = 'banana'
-//     console.log(fruit)
+    //  let changeFruits=()=>{
+    //     fruit = 'banana'
+    //     console.log(fruit)
 
-//  }
+    //  }
 
 
 
-let fruit = "apple"
+    // let fruit = "apple"
 
-let newFruit =()=>{
-    fruit = " banana"
-    console.log(fruit)
-    
-}
+    // let newFruit =()=>{
+    //     fruit = " banana"
+    //     console.log(fruit)
 
+    // }
+
+
+    let fruit = "apple"
+    let newFruit = () => {
+        fruit = "banana"
+        console.log(fruit)
+    }
 
 
     return (
         <>
-            { 
-            <>
-                <h1>HOLA</h1>
+            <div><h1>{fruit}</h1>
+                <button className="btn" onClick={newFruit}>click to replace the fruit</button>
+            </div>
+
+
+            {
+                <>
+                    {/* <h1>HOLA</h1>
                 <h1>{fruit}</h1>
                 <button onClick={newFruit}>change the fruit</button>
-
+ */}
 
                 </>
 
