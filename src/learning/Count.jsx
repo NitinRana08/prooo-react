@@ -17,7 +17,7 @@ function Count() {
             <div>
                 <h1>here is the reverse one..</h1>
                 <h1>{zero}</h1>
-                <button>click to reverse the number</button>
+                <button onClick={()=>rev(zero - 1)}>click to reverse the number</button>
 
 
 
