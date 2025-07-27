@@ -18,6 +18,8 @@ function HideShow() {
                 {
                     display ? <h1>my name is nitin</h1> : null
                 }
+
+                
                 {
                     comDisplay ? <Eg /> : null
                 }

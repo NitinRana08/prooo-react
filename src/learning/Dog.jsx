@@ -9,10 +9,8 @@ function Dog() {
         }
         else{
             onClicked_New_Wheeler_Bike("Activa 3G");
-          
             
         }
-
 
 
     }
