@@ -9,6 +9,7 @@ function PROPS({details}) {
         <h1>Email: {details.email}</h1>
         </div>
         <hr />
+        
         </>
     )
 }

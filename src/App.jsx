@@ -1,12 +1,14 @@
 
-import ArrPRO from "./learning/ArrayPRO"
+import ArrPRO from "./learning/props/ArrayPRO"
 import Count from "./learning/Count"
 import Dog from "./learning/Dog"
 import Exercise from "./learning/Exercise"
 import Hide1 from "./learning/Hide1"
 import HideShow from "./learning/HideShow"
 import IfElse from "./learning/IfElse"
-import PROPS from "./learning/PROPS"
+import PROPS from "./learning/props/PROPS"
+import Student from "./learning/props/Student"
+import { useState } from "react"
 function App() {
 
   // let name = 'nitin rana'
@@ -24,11 +26,39 @@ function App() {
   //   age: 22,
   //   email:"sharadR8229@gmail.com"
   // }
-let collegeName =['amity ' , 'gl ' , 'sharda']
+  // let collegeName =['amity ' , 'gl ' , 'sharda']
+
+  // let collegeNAME = ['GL Bajaj', 'Amity', 'Bennett University', 'Sharda Greater Noida']
+  // const [BachelorCLG,MasterCLG]=useState("GL Bajaj")
+
+
+
+
+  const [Firstnaam, secondNaam] = useState()
+
   return (
 
-  <>
-      <ArrPRO  details={collegeName}/>
+    <>
+   {Firstnaam && <Student naam={Firstnaam} />}
+
+      <button onClick={()=>secondNaam("hello here you go")}>click to see</button>
+   
+
+
+
+
+
+
+
+
+
+
+      {/* <button on onClick={()=>MasterCLG({BachelorCLG})}>click me to change the college name</button> */}
+      {/* < Student name={collegeNAME} /> */}
+      {/* <Student  name={BachelorCLG}/>
+      {BachelorCLG && <BachelorCLG >}
+      <button onClick={()=>name("Bennett University")}>click to master course</button> */}
+      {/* <ArrPRO  details={collegeName}/> */}
 
       {/* <PROPS details={collegeName} /> */}
       {/* <Dog />
@@ -46,7 +76,7 @@ let collegeName =['amity ' , 'gl ' , 'sharda']
       {/* <PROPS details={user1_ObjDetails} />
       <PROPS  details={user2_ObjDetails}    /> */}
       {/* < ArrPRO /> */}
-    
+
 
     </>
 
