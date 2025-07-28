@@ -1,9 +1,15 @@
-const PROPS=(props)=>{
-    console.log(props.name)
-    return(
+function PROPS({details}) {
+    // console.log(data)
+    return (
+       
         <>
-        <h1>{props.name}</h1></>
-
+        <div className="user1">
+        <h1>name: {details.name}</h1>
+        <h1>age: {details.age}</h1>
+        <h1>Email: {details.email}</h1>
+        </div>
+        <hr />
+        </>
     )
 }
- export default PROPS
+export default PROPS
