@@ -1,33 +1,33 @@
-import { useState } from "react"
-import Eg from "./Eg"
+// import { useState } from "react"
+// import Eg from "./Eg"
 
 
-function HideShow() {
+// function HideShow() {
 
 
-    const [display, setDisplay] = useState(1)
-    const [comDisplay,setCOMdisplay]= useState(1)
+//     const [display, setDisplay] = useState(1)
+//     const [comDisplay,setCOMdisplay]= useState(1)
 
 
-    return (
+//     return (
 
-        <>
-            <div>
-                <h1>HOLA</h1>
-                <button onClick={() => setDisplay(!display)}>toggle</button>
-                {
-                    display ? <h1>my name is nitin</h1> : null
-                }
+//         <>
+//             <div>
+//                 <h1>HOLA</h1>
+//                 <button onClick={() => setDisplay(!display)}>toggle</button>
+//                 {
+//                     display ? <h1>my name is nitin</h1> : null
+//                 }
 
                 
-                {
-                    comDisplay ? <Eg /> : null
-                }
+//                 {
+//                     comDisplay ? <Eg /> : null
+//                 }
 
 
-            </div>
-        </>
+//             </div>
+//         </>
 
-    )
-}
-export default HideShow
+//     )
+// }
+// export default HideShow

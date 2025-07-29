@@ -4,13 +4,14 @@ import Count from "./learning/click_count/Count"
 import Dog from "./learning/ifelse/Dog"
 import Exercise from "./learning/testing/Exercise"
 import Hide1 from "./learning/hide_show/Hide1"
-import HideShow from "./learning/hide_show/HideShow"
+// import HideShow from "./learning/hide_show/HideShow"
 import IfElse from "./learning/click_count/IfElse"
 import PROPS from "./learning/props/PROPS"
 import Student from "./learning/props/Student"
 import { useState } from "react"
 import PRA from "./learning/props/PRA"
 import Wrapper from "./learning/props/Wrapper"
+import INPUTvalue from "./learning/input_value/INPUTvalue"
 function App() {
 
   // let name = 'nitin rana'
@@ -38,11 +39,31 @@ function App() {
 
   // const [Firstnaam, secondNaam] = useState()
 
-  const username = "nitin rana"
+  // const username = "nitin rana"
+
+
+
+
+
   return (
 
     <>
+    {/* <h1>helo</h1> */}
     <div>
+        <h1>enter your name</h1>
+        <input type="text" onChange={(event)=>alert(event.target.value)} placeholder="User Name" />
+        </div>
+
+
+
+
+
+
+
+
+
+
+    {/* <div>
       <h1>props in react js</h1>
       <Wrapper>
          <h1>hello</h1>
@@ -55,7 +76,7 @@ function App() {
 
 
     </div>
-
+ */}
 
 
 
