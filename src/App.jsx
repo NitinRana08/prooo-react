@@ -9,6 +9,8 @@ import IfElse from "./learning/IfElse"
 import PROPS from "./learning/props/PROPS"
 import Student from "./learning/props/Student"
 import { useState } from "react"
+import PRA from "./learning/props/PRA"
+import Wrapper from "./learning/Wrapper"
 function App() {
 
   // let name = 'nitin rana'
@@ -34,15 +36,37 @@ function App() {
 
 
 
-  const [Firstnaam, secondNaam] = useState()
+  // const [Firstnaam, secondNaam] = useState()
 
+  const username = "nitin rana"
   return (
 
     <>
-   {Firstnaam && <Student naam={Firstnaam} />}
+
+<div>
+  <h1>propd</h1>
+  <Wrapper><h1 color="white">hellodcdc</h1></Wrapper>
+</div>
+    {/* <Wrapper><h1>heloodcdc</h1> </Wrapper> */}
+
+
+
+      {/* <div>
+
+        <PRA brand="BMW Z4" color="black" /> */}
+
+        {/* <Wrapper name={username} /> */}
+
+        {/* <Wrapper><div>hello</div></Wrapper>
+
+      </div> */}
+
+
+
+      {/* {Firstnaam && <Student naam={Firstnaam} />}
 
       <button onClick={()=>secondNaam("hello here you go")}>click to see</button>
-   
+    */}
 
 
 
