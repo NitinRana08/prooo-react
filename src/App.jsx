@@ -42,11 +42,32 @@ function App() {
   return (
 
     <>
+    <div>
+      <h1>props in react js</h1>
+      <Wrapper>
+         <h1>hello</h1>
+      </Wrapper>
 
-<div>
+
+<Wrapper>
+  <h3 style={{fontSize:"40px"}}>nitin rana</h3>
+</Wrapper>
+
+    </div>
+
+
+
+
+
+
+
+
+{/* <div>
   <h1>propd</h1>
-  <Wrapper><h1 color="white">hellodcdc</h1></Wrapper>
-</div>
+  <Wrapper>
+    <h1 color="white">hellodcdc</h1>
+    </Wrapper>
+</div> */}
     {/* <Wrapper><h1>heloodcdc</h1> </Wrapper> */}
 
 
