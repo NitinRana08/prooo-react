@@ -1,16 +1,16 @@
 
 import ArrPRO from "./learning/props/ArrayPRO"
-import Count from "./learning/Count"
-import Dog from "./learning/Dog"
-import Exercise from "./learning/Exercise"
-import Hide1 from "./learning/Hide1"
-import HideShow from "./learning/HideShow"
-import IfElse from "./learning/IfElse"
+import Count from "./learning/click_count/Count"
+import Dog from "./learning/ifelse/Dog"
+import Exercise from "./learning/testing/Exercise"
+import Hide1 from "./learning/hide_show/Hide1"
+import HideShow from "./learning/hide_show/HideShow"
+import IfElse from "./learning/click_count/IfElse"
 import PROPS from "./learning/props/PROPS"
 import Student from "./learning/props/Student"
 import { useState } from "react"
 import PRA from "./learning/props/PRA"
-import Wrapper from "./learning/Wrapper"
+import Wrapper from "./learning/props/Wrapper"
 function App() {
 
   // let name = 'nitin rana'
@@ -52,6 +52,7 @@ function App() {
 <Wrapper>
   <h3 style={{fontSize:"40px"}}>nitin rana</h3>
 </Wrapper>
+
 
     </div>
 
