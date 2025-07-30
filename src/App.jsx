@@ -49,10 +49,8 @@ function App() {
 
     <>
     {/* <h1>helo</h1> */}
-    <div>
-        <h1>enter your name</h1>
-        <input type="text" onChange={(event)=>alert(event.target.value)} placeholder="User Name" />
-        </div>
+    <INPUTvalue/>
+  
 
 
 
