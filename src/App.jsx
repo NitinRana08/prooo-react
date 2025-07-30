@@ -12,6 +12,8 @@ import { useState } from "react"
 import PRA from "./learning/props/PRA"
 import Wrapper from "./learning/props/Wrapper"
 import INPUTvalue from "./learning/input_value/INPUTvalue"
+import Form from "./learning/from/Form"
+import CheckBox from "./learning/from/CheckBox"
 function App() {
 
   // let name = 'nitin rana'
@@ -48,9 +50,12 @@ function App() {
   return (
 
     <>
-    {/* <h1>helo</h1> */}
-    <INPUTvalue/>
-  
+
+    <CheckBox/>
+      {/* <h1>helo</h1> */}
+      {/* <INPUTvalue/> */}
+
+      {/* <Form /> */}
 
 
 
@@ -61,7 +66,9 @@ function App() {
 
 
 
-    {/* <div>
+
+
+      {/* <div>
       <h1>props in react js</h1>
       <Wrapper>
          <h1>hello</h1>
@@ -82,13 +89,13 @@ function App() {
 
 
 
-{/* <div>
+      {/* <div>
   <h1>propd</h1>
   <Wrapper>
     <h1 color="white">hellodcdc</h1>
     </Wrapper>
 </div> */}
-    {/* <Wrapper><h1>heloodcdc</h1> </Wrapper> */}
+      {/* <Wrapper><h1>heloodcdc</h1> </Wrapper> */}
 
 
 
@@ -96,9 +103,9 @@ function App() {
 
         <PRA brand="BMW Z4" color="black" /> */}
 
-        {/* <Wrapper name={username} /> */}
+      {/* <Wrapper name={username} /> */}
 
-        {/* <Wrapper><div>hello</div></Wrapper>
+      {/* <Wrapper><div>hello</div></Wrapper>
 
       </div> */}
 
