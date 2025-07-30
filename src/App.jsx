@@ -14,6 +14,7 @@ import Wrapper from "./learning/props/Wrapper"
 import INPUTvalue from "./learning/input_value/INPUTvalue"
 import Form from "./learning/from/Form"
 import CheckBox from "./learning/from/CheckBox"
+import DropDown from "./learning/from/DropDown"
 function App() {
 
   // let name = 'nitin rana'
@@ -50,8 +51,8 @@ function App() {
   return (
 
     <>
-
-    <CheckBox/>
+      <DropDown />
+      {/* <CheckBox/> */}
       {/* <h1>helo</h1> */}
       {/* <INPUTvalue/> */}
 
