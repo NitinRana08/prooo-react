@@ -1,16 +1,22 @@
+import { useState } from "react"
+
 function DropDown() {
+
+    const [city,setCity]=useState("India")
 
     return (
         <>
 
             <h1>Select city</h1>
-            <select name="" id="" defaultValue={"P"}>
-                <option value="N">Noida</option>
-                <option value="D">Delhi</option>
-                <option value="P">Pune</option>
-                <option value="M">Mumbai</option>
+            <select onChange={(event)=>setCity(event.target.value)} defaultValue={"P"}>
+                <option value="Noida">Noida</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Pune">Pune</option>
+                <option value="Mumbai">Mumbai</option>
 
             </select>
+            
+            <h2>Selected City: {city}</h2>
         </>
 
     )
