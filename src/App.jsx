@@ -15,6 +15,8 @@ import INPUTvalue from "./learning/input_value/INPUTvalue"
 import Form from "./learning/from/Form"
 import CheckBox from "./learning/from/CheckBox"
 import DropDown from "./learning/from/DropDown"
+import Table from "./learning/Table_Loop_Array_map/Table"
+import REuse from "./learning/reuseOfComp/REuse"
 function App() {
 
   // let name = 'nitin rana'
@@ -51,7 +53,9 @@ function App() {
   return (
 
     <>
-      <DropDown />
+    <REuse/>
+    {/* <Table/> */}
+      {/* <DropDown /> */}
       {/* <CheckBox/> */}
       {/* <h1>helo</h1> */}
       {/* <INPUTvalue/> */}
