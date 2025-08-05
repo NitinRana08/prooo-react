@@ -54,17 +54,20 @@ function App() {
 
     <>
 
-    {/* <Exercise/> */}
-    <Exercise name="nitin" age={21} />
-    <h1>its 5 aug</h1>
-
 
     
 
+      {/* <Exercise/> */}
+      <Exercise name="nitin" age={21} />
+      {/* <h1>its 5 aug</h1> */}
 
-    {/* <REuse/> */}
-    {/* <h1>yeh its me</h1> */}
-    {/* <Table/> */}
+
+
+
+
+      {/* <REuse/> */}
+      {/* <h1>yeh its me</h1> */}
+      {/* <Table/> */}
       {/* <DropDown /> */}
       {/* <CheckBox/> */}
       {/* <h1>helo</h1> */}
