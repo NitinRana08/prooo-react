@@ -53,8 +53,13 @@ function App() {
   return (
 
     <>
-    <REuse/>
-    <h1>yeh its me</h1>
+
+    {/* <Exercise/> */}
+    <Exercise name="nitin" age={21} />
+
+
+    {/* <REuse/> */}
+    {/* <h1>yeh its me</h1> */}
     {/* <Table/> */}
       {/* <DropDown /> */}
       {/* <CheckBox/> */}
