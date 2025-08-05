@@ -50,23 +50,62 @@ function Exercise(props) {
 
 
 
-const [count,clickCount]=useState(0)
+    // const [count, clickCount] = useState(0)
+    // const [data, setData] = useState(0)
 
-const faltu =()=>{
-    console.log("call events")
-}
 
-useEffect(()=>{
- faltu()
-},[])
+    // useEffect(() => {
+    //     // faltu()
+    //     faltuu()
+    // }, [])
+
+    // const faltu = () => {
+    //     console.log("call events")
+    // }
+    // faltu()
+
+    // const faltuu = () => {
+    //     console.log("call eventssssssssssssssss")
+    // }
+
+
+    // function NameForm() {
+    //     const [name, setName] = useState(''); // to store the input value
+
+    //     const handleChange = (event) => {
+    //         setName(event.target.value); // update state as user types
+    //     };
+
+    const [name, setName] = useState(''); // to store the input value
+
+    const handleChange = (event) => {
+        setName(event.target.value);
+    }             // update state as user types
+
 
     return (
         <>
-        <div>
-            <h1>click to incress__{count}</h1>
-            <button onClick={()=>clickCount(count-1)}>click bb</button>
-        </div>
+            <div>
+                <h2>Enter your name:</h2>
+                <input type="text" value={name} onChange={handleChange} />
+                <p>Your name is: {name}</p>
+            </div>
 
+
+
+            {/* <div>
+                    <h2>Enter your name:</h2>
+                    <input type="text" value={name} onChange={handleChange} />
+                    <p>Your name is: {name}</p>
+                </div>
+                <div>
+                    <h1>click to incress__{count}</h1>
+                    <button onClick={() => clickCount(count - 1)}>click bb</button>
+
+                </div>
+                <h1>click to incress__ by 10______{data}</h1>
+                <button onClick={() => setData(data + 1)}>Scond btn of useState</button>
+ */}
 
 
 
@@ -91,4 +130,5 @@ useEffect(()=>{
         </>
     )
 }
+
 export default Exercise
