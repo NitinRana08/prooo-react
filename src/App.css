@@ -3,3 +3,11 @@ body{
   color: white;
   
 }
+button{
+  /* c */
+  font-size: 38px;
+  padding: 16px 32px;
+  border-radius: 8px;
+  width: 200px;
+     
+}
