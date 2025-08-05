@@ -56,6 +56,10 @@ function App() {
 
     {/* <Exercise/> */}
     <Exercise name="nitin" age={21} />
+    <h1>its 5 aug</h1>
+
+
+    
 
 
     {/* <REuse/> */}
