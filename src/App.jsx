@@ -18,6 +18,7 @@ import DropDown from "./learning/from/DropDown"
 import Table from "./learning/Table_Loop_Array_map/Table"
 import REuse from "./learning/reuseOfComp/REuse"
 import ONchange from "./learning/ONchange/ONchange"
+import LiftingStateUp from "./learning/Lifting_state_up/LiftingStateUp"
 function App() {
 
   // let name = 'nitin rana'
@@ -54,10 +55,13 @@ function App() {
   return (
 
     <>
-    <ONchange/>
+
+      <LiftingStateUp />
+
+      {/* <ONchange/> */}
 
 
-    
+
 
       {/* <Exercise/> */}
       {/* <Exercise name="nitin" age={21} /> */}

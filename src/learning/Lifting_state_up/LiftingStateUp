@@ -1,0 +1,10 @@
+function LiftingStateUp() {
+    return (
+        <>
+            <div>
+                <p>my name is nitn </p>
+            </div>
+        </>
+    )
+}
+export default LiftingStateUp;
