@@ -17,6 +17,7 @@ import CheckBox from "./learning/from/CheckBox"
 import DropDown from "./learning/from/DropDown"
 import Table from "./learning/Table_Loop_Array_map/Table"
 import REuse from "./learning/reuseOfComp/REuse"
+import ONchange from "./learning/ONchange/ONchange"
 function App() {
 
   // let name = 'nitin rana'
@@ -53,12 +54,13 @@ function App() {
   return (
 
     <>
+    <ONchange/>
 
 
     
 
       {/* <Exercise/> */}
-      <Exercise name="nitin" age={21} />
+      {/* <Exercise name="nitin" age={21} /> */}
       {/* <h1>its 5 aug</h1> */}
 
 

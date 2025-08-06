@@ -76,20 +76,38 @@ function Exercise(props) {
     //         setName(event.target.value); // update state as user types
     //     };
 
-    const [name, setName] = useState(''); // to store the input value
+    // const [name, setName] = useState(''); // to store the input value
 
-    const handleChange = (event) => {
-        setName(event.target.value);
-    }             // update state as user types
+    // const handleChange = (event) => {
+    //     setName(event.target.value);
+    // }             // update state as user types
+
+    // const [name, setName] = useState("")
+    // const handleChange = (event) => {
+    //     setName(event.target.value)
+    // }
+    
 
 
     return (
         <>
-            <div>
+
+
+            {/* <div>
+                <h2>enter you name:</h2>
+                <input type="text" value={name} onChange={handleChange} placeholder="naam daal" />
+                <h1>you name is: {name}</h1>
+            </div> */}
+
+
+
+
+
+            {/* <div>
                 <h2>Enter your name:</h2>
                 <input type="text" value={name} onChange={handleChange} />
                 <p>Your name is: {name}</p>
-            </div>
+            </div> */}
 
 
 
