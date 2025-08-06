@@ -1,10 +1,17 @@
-function AddUser(){
-    return(
+import { useState } from "react"
+
+function AddUser({setUserPro}) {
+  
+    
+
+    return (
         <>
-        <h1>input here</h1>
-        <input type="text" placeholder="enter" />
-        <button>submit</button>
-        <hr />
+            {/* <h1>This is AddUser.jsx</h1> */}
+            {/* <h2>{user}</h2> */}
+            <input type="text"  onChange={(event) => setUserPro(event.target.value)} placeholder="enter" />
+            <br />
+            {/* <button>submit</button> */}
+            <hr />
         </>
     )
 }

@@ -1,11 +1,12 @@
-function DisplayUser (){
-    return(
+function DisplayUser({userPro}) {
+    return (
         <>
-        <div>
-            <hr />
-            <h2>displayuser</h2>
+            <div>
 
-        </div>
+                {/* <h2>This is displayuser.jsx</h2> */}
+                <h1>{userPro}</h1>
+                <hr />
+            </div>
         </>
     )
 }
