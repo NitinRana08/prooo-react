@@ -15,6 +15,7 @@ function IFELSE() {
                     count == 0 ? <h2>nitin rana</h2>:null
                 }
                 <button onClick={()=>setCount(count+1)}>counter</button>
+                <h2>@nitinrana</h2>
 
                     </div>
      
