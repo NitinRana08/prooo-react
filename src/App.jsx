@@ -19,6 +19,9 @@ import Table from "./learning/Table_Loop_Array_map/Table"
 import REuse from "./learning/reuseOfComp/REuse"
 
 import LiftingStateUp from "./learning/Lifting_state_up/LiftingStateUp.jsx"
+import LOGIN from "./learning/if_else_toggle/LOGIN.jsx"
+// import IfElse from "./learning/click_count/IfElse"
+import IFELSE from "./learning/if_else_toggle/IFELSE.jsx"
 function App() {
 
   // let name = 'nitin rana'
@@ -49,14 +52,39 @@ function App() {
   // const username = "nitin rana"
 
 
+  // const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  // const handleLoginLogout = () => {
+  //   setIsLoggedIn(!isLoggedIn);
+  // }
 
 
 
   return (
 
     <>
+    <IFELSE/>
+    {/* <IfElse/> */}
+    {/* <LOGIN/> */}
 
-      <LiftingStateUp />
+
+    {/* <div>
+    <h1>Welcome to MyApp</h1>
+
+      {isLoggedIn ? (
+        <>
+          <p>You are logged in!</p>
+          <button onClick={handleLoginLogout}>Logout</button>
+        </>
+      ) : (
+        <>
+          <p>Please login to continue</p>
+          <button onClick={handleLoginLogout}>Login</button>
+        </>
+      )}
+    </div> */}
+
+      {/* <LiftingStateUp /> */}
 
   
 
