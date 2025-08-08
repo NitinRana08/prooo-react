@@ -22,6 +22,7 @@ import LiftingStateUp from "./learning/Lifting_state_up/LiftingStateUp.jsx"
 import LOGIN from "./learning/if_else_toggle/LOGIN.jsx"
 // import IfElse from "./learning/click_count/IfElse"
 import IFELSE from "./learning/if_else_toggle/IFELSE.jsx"
+import MAP from "./learning/map/MAP.jsx"
 function App() {
 
   // let name = 'nitin rana'
@@ -63,12 +64,14 @@ function App() {
   return (
 
     <>
-    <IFELSE/>
-    {/* <IfElse/> */}
-    {/* <LOGIN/> */}
+
+      <MAP />
+      {/* <IFELSE/> */}
+      {/* <IfElse/> */}
+      {/* <LOGIN/> */}
 
 
-    {/* <div>
+      {/* <div>
     <h1>Welcome to MyApp</h1>
 
       {isLoggedIn ? (
@@ -86,7 +89,7 @@ function App() {
 
       {/* <LiftingStateUp /> */}
 
-  
+
 
 
 
