@@ -25,7 +25,9 @@ function IFELSE(){
 
             {
                 a=="apple"? <h2>yes apple it is</h2>: <h2>na na</h2>
+               
             }
+             <h2>hello</h2>
         </div>
         </>
     )
