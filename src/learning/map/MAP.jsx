@@ -1,3 +1,5 @@
+import { hydrateRoot } from "react-dom/client"
+
 function MAP() {
 
 
@@ -30,10 +32,11 @@ function MAP() {
                         </tr>
                     
                     )
+                   
                 }
 
             </table>
-
+ <h2>hydrateRoot</h2>
 
 
 
