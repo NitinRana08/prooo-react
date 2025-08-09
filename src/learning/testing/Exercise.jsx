@@ -87,11 +87,27 @@ function Exercise(props) {
     //     setName(event.target.value)
     // }
     
-
+// const [name,setName]=useState("nitin rana")
+const [address, setAddress] = useState("");
 
     return (
         <>
+        <div>
+      <h3>Enter Your Delivery Address:</h3>
+      <input
+        type="text"
+        value={address}
+        placeholder="e.g. Sector 62, Noida"
+        onChange={(e) => setAddress(e.target.value)}
+      />
 
+      <p>We will deliver your food to: {address || "________"}</p>
+    </div>
+
+        {/* <div>
+            <h2>your name {name}</h2>
+            <input type="text" value={name} onChange={(e)=>setName(e.target.value)}/>
+        </div> */}
 
             {/* <div>
                 <h2>enter you name:</h2>

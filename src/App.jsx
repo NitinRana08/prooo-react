@@ -23,6 +23,7 @@ import LOGIN from "./learning/if_else_toggle/LOGIN.jsx"
 // import IfElse from "./learning/click_count/IfElse"
 import IFELSE from "./learning/if_else_toggle/IFELSE.jsx"
 import MAP from "./learning/map/MAP.jsx"
+import FORM from "./learning/Form/FORM.jsx"
 function App() {
 
   // let name = 'nitin rana'
@@ -64,8 +65,10 @@ function App() {
   return (
 
     <>
+    <FORM/>
+    {/* <Exercise/> */}
 
-      <MAP />
+      {/* <MAP /> */}
       {/* <IFELSE/> */}
       {/* <IfElse/> */}
       {/* <LOGIN/> */}
