@@ -1,27 +1,35 @@
-function FORM (){
+function FORM() {
 
-    const handleIT=(e)=>{
-        console.log(e.target.value,e.target.name);
+
+    const handlekroo= async()=>{
+        await new Promise(res=>setTimeout(res,2000))
+        console.log("submit ho gaya");
         
 
 
     }
-    return(
-        <>
-        <h2>login form handling using useState</h2>
-        <form action="">
-            <div>
-                <input onChange={handleIT} type="emial" placeholder="email" aria-required/>
-                <label htmlFor="">Email</label>
-            </div>
-            <div>
-                <input type="password" placeholder="PS" required onChange={handleIT}/>
-                <label htmlFor="">password</label>
-            </div>
-            <button>submit</button>
 
-        </form>
-        </>
-    )
+    return (
+    <>
+
+        <div>
+            <h1>fill</h1>
+            <form action={handlekroo}>
+                <label htmlFor="">name: </label><input type="text" />
+                <br />
+                <label htmlFor="">password: </label><input type="text" />
+                <br />
+                <button>submit</button>
+            </form>
+        </div>
+
+    </>
+)
+
+
+
+
+
 }
+
 export default FORM
