@@ -65,8 +65,8 @@ function App() {
   return (
 
     <>
-    <FORM/>
-    {/* <Exercise/> */}
+      <FORM />
+      {/* <Exercise/> */}
 
       {/* <MAP /> */}
       {/* <IFELSE/> */}

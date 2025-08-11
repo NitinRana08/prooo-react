@@ -1,46 +1,20 @@
 import { useState } from "react"
+import FORM2 from "./FORM2"
 
 function FORM() {
-     const [Fname,setFname]=useState("")
-        const [Lname,setLname]=useState("")
-        const [password,setPassword]=useState("")
 
 
-        
-
-
-
-        const handleInputChange=(comeData)=>{
-            setFname(comeData.target.value)
-            setLname(comeData.target.value)
-            setPassword(comeData.target.value)
-
-
-        }
-    
-
+const [count,setCount]=useState(0)
 
 
     return (
-    <>
+        <>
+        <FORM2 propsData={count}/>
+        <button onClick={()=>setCount(count + 1)}>add count {count}</button>
 
-        <div>
-            <h1>fill</h1>
-            <form >
-                <h1>
-                <label htmlFor="">first name: </label><input type="text" value={Fname} onChange={handleInputChange} />
-                <br />
-                <label htmlFor="">last name: </label><input type="text" value={Lname} onChange={handleInputChange}/>
-                <br />
-                <label htmlFor="">password: </label><input type="text" value={password} onChange={handleInputChange}/>
-                <br />
-                <button>submit</button>
-                </h1>
-            </form>
-        </div>
 
-    </>
-)
+        </>
+    )
 
 
 
