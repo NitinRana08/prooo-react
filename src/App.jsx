@@ -24,6 +24,7 @@ import LOGIN from "./learning/if_else_toggle/LOGIN.jsx"
 import IFELSE from "./learning/if_else_toggle/IFELSE.jsx"
 import MAP from "./learning/map/MAP.jsx"
 import FORM from "./learning/Form/FORM.jsx"
+import oneROUTER from "./learning/Router/oneROUTER.jsx"
 function App() {
 
   // let name = 'nitin rana'
@@ -65,7 +66,8 @@ function App() {
   return (
 
     <>
-      <FORM />
+      <oneROUTER />
+      {/* <FORM /> */}
       {/* <Exercise/> */}
 
       {/* <MAP /> */}
