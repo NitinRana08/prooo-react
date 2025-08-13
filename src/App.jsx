@@ -25,7 +25,28 @@ import IFELSE from "./learning/if_else_toggle/IFELSE.jsx"
 import MAP from "./learning/map/MAP.jsx"
 import FORM from "./learning/Form/FORM.jsx"
 import oneROUTER from "./learning/Router/oneROUTER.jsx"
+
+
+
+
+
+import OneROUTER from "./learning/Router/oneROUTER.jsx"
+import { createBrowserRouter , RouterProvider } from "react-router-dom"
+import Home from "./learning/Router/Home.jsx"
+import About from "./learning/Router/About.jsx"
+import Contact from "./learning/Router/Contact.jsx"
 function App() {
+
+  const nav = createBrowserRouter([{
+      path: "/",
+      element: <OneROUTER />, // layout wrapper
+      children: [
+        { path: "/", element: <Home /> },
+        { path: "/about", element: <About /> },
+        { path: "/contact", element: <Contact /> },
+      ],
+    },
+  ])
 
   // let name = 'nitin rana'
 
@@ -66,7 +87,10 @@ function App() {
   return (
 
     <>
-      <oneROUTER />
+   
+    <RouterProvider router={nav}/>
+    {/* <div></div> */}
+      {/* <oneROUTER /> */}
       {/* <FORM /> */}
       {/* <Exercise/> */}
 
