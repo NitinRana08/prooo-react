@@ -27,10 +27,24 @@ import FORM from "./learning/Form/FORM.jsx"
 
 
 
-
+import Nav from "./learning/Router/Nav.jsx"
+import { createBrowserRouter , RouterProvider} from "react-router-dom"
+import Home from "./learning/Router/Home.jsx"
+import Login from "./learning/Router/Login.jsx"
 
 
 function App() {
+
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Home/>
+    },
+    {
+      path: "/Login",
+      element : <Login/>
+    }
+  ])
 
   // const nav = createBrowserRouter([{
   //     path: "/",
@@ -82,6 +96,8 @@ function App() {
   return (
 
     <>
+<h2>hola</h2>
+    <Nav/>
     {/* <AppGPT/> */}
    
     {/* <RouterProvider router={nav}/> */}
