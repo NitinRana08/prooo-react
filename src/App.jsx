@@ -28,22 +28,33 @@ import FORM from "./learning/Form/FORM.jsx"
 
 
 import Nav from "./learning/Router/Nav.jsx"
-import { createBrowserRouter , RouterProvider} from "react-router-dom"
+import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import Home from "./learning/Router/Home.jsx"
 import Login from "./learning/Router/Login.jsx"
-
+import About from "./learning/Router/About.jsx"
+import Contact from "./learning/Router/Contact.jsx"
+import UseRefOne from "./learning/useRef/UseRefOne.jsx"
 
 function App() {
 
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Home/>
+      element: <><Nav /><Home /></>
     },
     {
       path: "/Login",
-      element : <Login/>
+      element: <> <Nav /><Login /></>
+    },
+    {
+      path: "/About",
+      element: <> <Nav /><About /></>
+    },
+    {
+      path: "/Contact",
+      element: <> <Nav /><Contact /></>
     }
+
   ])
 
   // const nav = createBrowserRouter([{
@@ -96,12 +107,15 @@ function App() {
   return (
 
     <>
-<h2>hola</h2>
-    <Nav/>
-    {/* <AppGPT/> */}
-   
-    {/* <RouterProvider router={nav}/> */}
-    {/* <div></div> */}
+
+      <UseRefOne />
+      {/* <h2>hola from app.jsx</h2>
+      
+      <RouterProvider router={router} /> */}
+      {/* <AppGPT/> */}
+
+      {/* <RouterProvider router={nav}/> */}
+      {/* <div></div> */}
       {/* <oneROUTER /> */}
       {/* <FORM /> */}
       {/* <Exercise/> */}
@@ -113,7 +127,7 @@ function App() {
 
 
       {/* <div>
-    <h1>Welcome to MyApp</h1>
+      <h1>Welcome to MyApp</h1>
 
       {isLoggedIn ? (
         <>

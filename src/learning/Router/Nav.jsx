@@ -1,15 +1,18 @@
-const Nav=()=>{
-    return(
-        <>
-        <div>
-            <nav>
-                <a href=""><li>Home</li></a>
-                <a href=""><li>About</li></a>
-                <a href=""><li>Contact</li></a>
-            </nav>
+import { Link } from "react-router-dom"
+const Nav = () => {
 
-            
-        </div>
+    return (
+        <>
+            <div>
+                <nav>
+                    <Link to="/"><li>Home</li></Link>
+                    <Link to="/About"><li>About</li></Link>
+                    <Link to="/Contact"><li>Contact</li></Link>
+                    <Link to="/Login"><li>Login</li></Link>
+                </nav>
+
+
+            </div>
 
         </>
     )
