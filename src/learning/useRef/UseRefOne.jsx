@@ -6,10 +6,10 @@ function UseRefOne() {
 
 
     const [count, setCount] = useState(0)
-    const a = 0
+    let a = useRef(0)
     useEffect(() => {
-        a=a+1
-        console.log(`the value is ${a}...`)
+         a.current=a.current+1
+        console.log(`the value is ${a.current}...`)
     })
 
 
