@@ -19,8 +19,8 @@ function UseRefOne() {
         <>
             <h1>{count}</h1>
             <button onClick={() => setCount(count + 1)}>click me to update </button>
-            <h2>hi
-                
+            <h2>hide
+
             </h2>
         </>
     )
