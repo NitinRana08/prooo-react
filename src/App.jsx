@@ -35,6 +35,7 @@ import About from "./learning/Router/About.jsx"
 import Contact from "./learning/Router/Contact.jsx"
 import UseRefOne from "./learning/useRef/UseRefOne.jsx"
 import UseRefSecond from "./learning/useRef/UseRefSecond.jsx"
+import New from "./learning/useRef/New.jsx"
 
 function App() {
 
@@ -108,7 +109,8 @@ function App() {
   return (
 
     <>
-      <UseRefSecond />
+    <New/>
+      {/* <UseRefSecond /> */}
       {/* <UseRefOne /> */}
       {/* <h2>hola from app.jsx</h2>
       
