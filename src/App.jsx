@@ -38,6 +38,7 @@ import UseRefSecond from "./learning/useRef/UseRefSecond.jsx"
 import New from "./learning/useRef/New.jsx"
 import TODO from "./learning/useState/TODO.jsx"
 import NEW1 from "./learning/useRef/NEW1.jsx"
+import PRAC from "./learning/useRef/PRAC.jsx"
 
 function App() {
 
@@ -111,7 +112,9 @@ function App() {
   return (
 
     <>
-    <NEW1/>
+    <PRAC/>
+
+      {/* <NEW1/> */}
       {/* <TODO/> */}
       {/* <New/> */}
       {/* <UseRefSecond /> */}
