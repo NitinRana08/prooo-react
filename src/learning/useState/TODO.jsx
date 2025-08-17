@@ -1,21 +1,27 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
+function TODO() {
 
+    const [count, setCount] = useState(0)
 
-const TODO =()=>{
-    const [count,setCount]=useState(0)
-    function add(){
-        setCount(count+1)
-
+    function handleIncrement() {
+        setCount(count + 1)
     }
+    useEffect(() => {
+        console.log("main re render honga baar baar kya kr lega tu");
 
-    return(
+    })// <- here is the reason
+
+    return (
         <>
-        <div>
-            <button onClick={add}>increment</button></div>
-        <div>
-            count:{count}
-        </div>
+            <div>
+                <button onClick={handleIncrement}>increment</button>
+                <br />
+                <div>
+                    count: {count}
+                </div>
+
+            </div>
         </>
     )
 }
