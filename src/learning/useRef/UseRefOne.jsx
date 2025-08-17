@@ -1,8 +1,7 @@
 import { useEffect, useState, useRef } from "react"
 
 function UseRefOne() {
-    w
-
+    
 
 
     const [count, setCount] = useState(0)
