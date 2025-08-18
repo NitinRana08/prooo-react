@@ -2,7 +2,7 @@ function PRAC(){
     return(
         <>
         <div>
-            idk
+         <h2>idk - its  a  PRAC component from react js </h2>
         </div>
         </>
     )
