@@ -39,6 +39,8 @@ import New from "./learning/useRef/New.jsx"
 import TODO from "./learning/useState/TODO.jsx"
 import NEW1 from "./learning/useRef/NEW1.jsx"
 import PRAC from "./learning/useRef/PRAC.jsx"
+import StopWatch from "./learning/useRef/StopWAtch.jsx"
+import NEw from "./learning/useState/NEw.jsx"
 
 function App() {
 
@@ -112,7 +114,9 @@ function App() {
   return (
 
     <>
-    <PRAC/>
+    <NEw/>
+    {/* <StopWatch/> */}
+    {/* <PRAC/> */}
 
       {/* <NEW1/> */}
       {/* <TODO/> */}
