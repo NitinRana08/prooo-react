@@ -1,28 +1,8 @@
-import { useEffect } from "react"
-
-function NEw (){
-    useEffect(()=>{
-        first
-
-        return()=>{
-            second
-
-        }
-
-    },[third])
-
+function NEw(){
     return(
         <>
-        <div>
-            <h1>
-                hola
-            </h1>
-        </div>
-
-
-
+        <div>hola</div>
         </>
     )
-
 }
 export default NEw
