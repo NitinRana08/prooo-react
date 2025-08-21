@@ -43,6 +43,7 @@ import StopWatch from "./learning/useRef/StopWAtch.jsx"
 import NEw from "./learning/useState/NEw.jsx"
 import NEW2 from "./learning/useRef/NEW2.jsx"
 import MEMO from "./learning/memo/MEMO.jsx"
+import NEWW from "./learning/memo/NEWW.jsx"
 
 function App() {
 
@@ -116,12 +117,13 @@ function App() {
   return (
 
     <>
+    <NEWW/>
 
-    <MEMO/>
-    {/* <NEW2/> */}
-    {/* <NEw/> */}
-    {/* <StopWatch/> */}
-    {/* <PRAC/> */}
+      {/* <MEMO /> */}
+      {/* <NEW2/> */}
+      {/* <NEw/> */}
+      {/* <StopWatch/> */}
+      {/* <PRAC/> */}
 
       {/* <NEW1/> */}
       {/* <TODO/> */}
