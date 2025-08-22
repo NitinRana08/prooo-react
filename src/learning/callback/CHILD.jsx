@@ -25,7 +25,7 @@ const CHILD = React.memo((props)=>{
     return(
         <>
         <div>
-            <button>
+            <button onClick={props.handleCick}>
                 {props.buttonName}
             </button>
         </div>

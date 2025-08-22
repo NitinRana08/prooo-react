@@ -116,6 +116,7 @@ function App() {
   // }
 
   const [count, setCount] = useState(0)
+  
   function handleClick() {
     setCount(count + 1)
   }
@@ -129,11 +130,14 @@ function App() {
       </div>
       <br />
       <div>
-        <CHILD buttonName='click me' />
+        <CHILD 
+        buttonName='click me' 
+        handleClick={handleClick}
+        />
       </div>
 
       {/* <CALLback_CHILD/> */}
-      {/* <CALLback/> */}
+      {/* <CALLback/> */} 
       {/* <NEWW/> */}
 
       {/* <MEMO /> */}
