@@ -8,7 +8,7 @@ import Hide1 from "./learning/hide_show/Hide1"
 import IfElse from "./learning/click_count/IfElse"
 import PROPS from "./learning/props/PROPS"
 import Student from "./learning/props/Student"
-import { useState } from "react"
+import { useCallback, useState } from "react"
 import PRA from "./learning/props/PRA"
 import Wrapper from "./learning/props/Wrapper"
 import INPUTvalue from "./learning/input_value/INPUTvalue"
@@ -116,10 +116,15 @@ function App() {
   // }
 
   const [count, setCount] = useState(0)
-  
-  function handleClick() {
+
+  // function handleClick() {
+
+  // }
+  const handleClick = useCallback(() => {
     setCount(count + 1)
-  }
+
+  }, [count])
+
 
   return (
 
@@ -130,14 +135,14 @@ function App() {
       </div>
       <br />
       <div>
-        <CHILD 
-        buttonName='click me' 
-        handleClick={handleClick}
+        <CHILD
+          buttonName='click me'
+          handleClick={handleClick}
         />
       </div>
 
       {/* <CALLback_CHILD/> */}
-      {/* <CALLback/> */} 
+      {/* <CALLback/> */}
       {/* <NEWW/> */}
 
       {/* <MEMO /> */}
