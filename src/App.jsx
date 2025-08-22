@@ -47,6 +47,8 @@ import NEWW from "./learning/memo/NEWW.jsx"
 import CALLback from "./learning/callback/CHILD.jsx"
 import CALLback_CHILD from "./learning/callback/CHILD.jsx"
 import CHILD from "./learning/callback/CHILD.jsx"
+import Child1 from "./learning/useContext/Child1.jsx"
+import { createContext } from "react"
 
 function App() {
 
@@ -115,21 +117,28 @@ function App() {
   //   setIsLoggedIn(!isLoggedIn);
   // }
 
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
 
   // function handleClick() {
 
   // }
-  const handleClick = useCallback(() => {
-    setCount(count + 1)
+  // const handleClick = useCallback(() => {
+  //   setCount(count + 1)
 
-  }, [count])
+  // }, [count])
 
+  const UserContext = createContext();
 
   return (
 
     <>
-      <div>
+      <UserContext.Provider 
+        value={{name:'nitin',age: 22, location : 'Greater Noida'} }
+        >
+        <Child1 />
+      </UserContext.Provider>
+
+      {/* <div>
         <h4>{count}</h4>
         <button onClick={handleClick}>clickMe</button>
       </div>
@@ -139,7 +148,7 @@ function App() {
           buttonName='click me'
           handleClick={handleClick}
         />
-      </div>
+      </div> */}
 
       {/* <CALLback_CHILD/> */}
       {/* <CALLback/> */}
