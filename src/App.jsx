@@ -44,6 +44,8 @@ import NEw from "./learning/useState/NEw.jsx"
 import NEW2 from "./learning/useRef/NEW2.jsx"
 import MEMO from "./learning/memo/MEMO.jsx"
 import NEWW from "./learning/memo/NEWW.jsx"
+import CALLback from "./learning/callback/CALLback.jsx"
+import CALLback_CHILD from "./learning/callback/CALLback.jsx"
 
 function App() {
 
@@ -117,7 +119,9 @@ function App() {
   return (
 
     <>
-    <NEWW/>
+    <CALLback_CHILD/>
+    {/* <CALLback/> */}
+    {/* <NEWW/> */}
 
       {/* <MEMO /> */}
       {/* <NEW2/> */}
