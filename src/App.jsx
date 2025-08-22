@@ -44,8 +44,9 @@ import NEw from "./learning/useState/NEw.jsx"
 import NEW2 from "./learning/useRef/NEW2.jsx"
 import MEMO from "./learning/memo/MEMO.jsx"
 import NEWW from "./learning/memo/NEWW.jsx"
-import CALLback from "./learning/callback/CALLback.jsx"
-import CALLback_CHILD from "./learning/callback/CALLback.jsx"
+import CALLback from "./learning/callback/CHILD.jsx"
+import CALLback_CHILD from "./learning/callback/CHILD.jsx"
+import CHILD from "./learning/callback/CHILD.jsx"
 
 function App() {
 
@@ -114,14 +115,26 @@ function App() {
   //   setIsLoggedIn(!isLoggedIn);
   // }
 
-
+  const [count, setCount] = useState(0)
+  function handleClick() {
+    setCount(count + 1)
+  }
 
   return (
 
     <>
-    <CALLback_CHILD/>
-    {/* <CALLback/> */}
-    {/* <NEWW/> */}
+      <div>
+        <h4>{count}</h4>
+        <button onClick={handleClick}>clickMe</button>
+      </div>
+      <br />
+      <div>
+        <CHILD buttonName='click me' />
+      </div>
+
+      {/* <CALLback_CHILD/> */}
+      {/* <CALLback/> */}
+      {/* <NEWW/> */}
 
       {/* <MEMO /> */}
       {/* <NEW2/> */}
