@@ -47,8 +47,9 @@ import NEWW from "./learning/memo/NEWW.jsx"
 import CALLback from "./learning/callback/CHILD.jsx"
 import CALLback_CHILD from "./learning/callback/CHILD.jsx"
 import CHILD from "./learning/callback/CHILD.jsx"
-import Child1 from "./learning/useContext/Child1.jsx"
+// import Child1 from "./learning/useContext/Child1.jsx"
 import { createContext } from "react"
+import Car1 from "./learning/useContext/Car1.jsx"
 
 function App() {
 
@@ -108,7 +109,7 @@ function App() {
 
   // const [Firstnaam, secondNaam] = useState()
 
-  // const username = "nitin rana"
+  // // const username = "nitin rana"
 
 
   // const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -127,16 +128,22 @@ function App() {
 
   // }, [count])
 
-  const UserContext = createContext();
+  // const UserContext = createContext();
+  // const details = { name: 'nitin', email: 'nitinr8229@gmial.com'}
 
   return (
 
     <>
-      <UserContext.Provider 
+    <Car1/>
+
+
+
+    {/* <Car1 user={details}/> */}
+      {/* <UserContext.Provider 
         value={{name:'nitin',age: 22, location : 'Greater Noida'} }
         >
         <Child1 />
-      </UserContext.Provider>
+      </UserContext.Provider> */}
 
       {/* <div>
         <h4>{count}</h4>
@@ -311,8 +318,8 @@ function App() {
       {/* <h2>{name}</h2> */}
       {/* <PROPS name="hello from app.jsx file - component" age={21} email="nitinr8229@gmail.com" /> */}
       {/* <PROPS name={username} age={age} email={email} /> */}
-      {/* <PROPS details={user1_ObjDetails} />
-      <PROPS  details={user2_ObjDetails}    /> */}
+      {/* <PROPS details={user1_ObjDetails} />  <PROPS  details={user2_ObjDetails}    /> */}
+     
       {/* < ArrPRO /> */}
 
 
