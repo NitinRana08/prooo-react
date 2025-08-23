@@ -8,7 +8,7 @@ import Hide1 from "./learning/hide_show/Hide1"
 import IfElse from "./learning/click_count/IfElse"
 import PROPS from "./learning/props/PROPS"
 import Student from "./learning/props/Student"
-import { useCallback, useState } from "react"
+// import { useCallback, useState } from "react"
 import PRA from "./learning/props/PRA"
 import Wrapper from "./learning/props/Wrapper"
 import INPUTvalue from "./learning/input_value/INPUTvalue"
@@ -52,9 +52,16 @@ import Car1 from "./learning/useContext/Car1.jsx"
 
 
 
-import { createContext } from "react"
+// import { createContext } from "react"
 
-import CHILD1 from "./learning/USEcontext2/Child1.jsx"
+// import CHILD1 from "./learning/USEcontext2/Child1.jsx"
+//  const UserContext = createContext();
+
+
+
+
+
+
 
 function App() {
 
@@ -138,12 +145,31 @@ function App() {
 
 
   //created context
-  const UserContext = createContext();
+
+
+  // const [user,setUser]= useState({name:"nitin rana"})
+  function BuggyComponent() {
+    // This will throw an error
+    throw new Error("Crashed!");
+  }
 
   return (
 
     <>
-      <CHILD1 />
+      <div>
+        <h1>Example: componentDidCatch</h1>
+        <br />
+        <ErrorBoundary>
+          <BuggyComponent />
+        </ErrorBoundary>
+      </div>
+
+      {/* <UserContext.Provider value={user}>
+
+        <CHILD1 />
+
+      </UserContext.Provider> */}
+
 
       {/* <Car1/> */}
 
@@ -342,3 +368,4 @@ function App() {
 }
 
 export default App
+// export { UserContext }
