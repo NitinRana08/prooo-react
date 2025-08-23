@@ -2,7 +2,7 @@ function CHILD3(){
     return (
         <>
         <div>
-            
+            hello
         </div>
         </>
     )
