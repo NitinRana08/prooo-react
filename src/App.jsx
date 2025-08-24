@@ -19,7 +19,7 @@ import Table from "./learning/Table_Loop_Array_map/Table"
 import REuse from "./learning/reuseOfComp/REuse"
 
 import LiftingStateUp from "./learning/Lifting_state_up/LiftingStateUp.jsx"
-import LOGIN from "./learning/if_else_toggle/LOGIN.jsx"
+// import LOGIN from "./learning/if_else_toggle/LOGIN.jsx"
 // import IfElse from "./learning/click_count/IfElse"
 import IFELSE from "./learning/if_else_toggle/IFELSE.jsx"
 import MAP from "./learning/map/MAP.jsx"
@@ -49,6 +49,9 @@ import CALLback_CHILD from "./learning/callback/CHILD.jsx"
 import CHILD from "./learning/callback/CHILD.jsx"
 // import Child1 from "./learning/useContext/Child1.jsx"
 import Car1 from "./learning/useContext/Car1.jsx"
+
+import App_LOGIN from "./practice-PROJECT/login/App_LOGIN.jsx"
+// import App_LOGIN from "./practice-PROJECT/login/App_LOGIN.jsx"
 
 
 
@@ -148,21 +151,24 @@ function App() {
 
 
   // const [user,setUser]= useState({name:"nitin rana"})
-  function BuggyComponent() {
-    // This will throw an error
-    throw new Error("Crashed!");
-  }
+  // function BuggyComponent() {
+  //   // This will throw an error
+  //   throw new Error("Crashed!");
+  // }
 
   return (
 
     <>
-      <div>
+    <App_LOGIN/>
+    {/* <App_LOGIN/> */}
+      {/* <LOGIN /> */}
+      {/* <div>
         <h1>Example: componentDidCatch</h1>
         <br />
         <ErrorBoundary>
           <BuggyComponent />
         </ErrorBoundary>
-      </div>
+      </div> */}
 
       {/* <UserContext.Provider value={user}>
 
