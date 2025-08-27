@@ -1,13 +1,15 @@
 import { useState } from "react"
 
 
-const useToggle=(defaultVal)=>{ //. component function
+const customToggle1=(defaultVal)=>{ //. component function
 
     const [value,setValue]=useState(defaultVal)
     
     
     function toggleValue(val){
         if(typeof val!='boolean'){
+            console.log("nitin");
+            
             setValue(!value)
         }else{
             setValue(val)
@@ -18,4 +20,4 @@ const useToggle=(defaultVal)=>{ //. component function
 
     return[value,toggleValue]
 }
-export default useToggle
+export default customToggle1
