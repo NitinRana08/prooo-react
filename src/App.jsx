@@ -50,6 +50,7 @@ import CHILD from "./learning/callback/CHILD.jsx"
 // import Child1 from "./learning/useContext/Child1.jsx"
 import Car1 from "./learning/useContext/Car1.jsx"
 import UseToggle1 from "./customHooks/useToggle1.jsx"
+import CHook1 from "./customHooks/CHook1.jsx"
 
 // import App_LOGIN from "./practice-PROJECT/login/App_LOGIN.jsx"
 // import App_LOGIN from "./practice-PROJECT/login/App_LOGIN.jsx"
@@ -160,7 +161,8 @@ function App() {
   return (
 
     <>
-    <UseToggle1/>
+    <CHook1/>
+    {/* <UseToggle1/> */}
     {/* <App_LOGIN/> */}
     {/* <App_LOGIN/> */}
       {/* <LOGIN /> */}
