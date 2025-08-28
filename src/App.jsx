@@ -51,6 +51,7 @@ import CHILD from "./learning/callback/CHILD.jsx"
 import Car1 from "./learning/useContext/Car1.jsx"
 import UseToggle1 from "./customHooks/useToggle1.jsx"
 import CHook1 from "./customHooks/CHook1.jsx"
+import { useState } from "react"
 
 // import App_LOGIN from "./practice-PROJECT/login/App_LOGIN.jsx"
 // import App_LOGIN from "./practice-PROJECT/login/App_LOGIN.jsx"
@@ -66,9 +67,13 @@ import CHook1 from "./customHooks/CHook1.jsx"
 
 
 
+import Counttt from "./learning/redux/Counttt.jsx"
+
 
 
 function App() {
+
+
 
   // const router = createBrowserRouter([
   //   {
@@ -157,14 +162,17 @@ function App() {
   //   // This will throw an error
   //   throw new Error("Crashed!");
   // }
-
+  const [count, setCount] = useState(0)
   return (
 
     <>
-    <CHook1/>
-    {/* <UseToggle1/> */}
-    {/* <App_LOGIN/> */}
-    {/* <App_LOGIN/> */}
+      <button onClick={() => setCount(count + 1)}>click to +1 count</button>
+      <h2>{count}</h2>
+      <Counttt count={count}/>
+      {/* <CHook1/> */}
+      {/* <UseToggle1/> */}
+      {/* <App_LOGIN/> */}
+      {/* <App_LOGIN/> */}
       {/* <LOGIN /> */}
       {/* <div>
         <h1>Example: componentDidCatch</h1>
