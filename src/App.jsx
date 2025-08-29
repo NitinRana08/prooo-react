@@ -54,6 +54,7 @@ import CHook1 from "./customHooks/CHook1.jsx"
 import { useState } from "react"
 import { useSelector,useDispatch } from "react-redux"
 import { increment } from "./redux/counter/counterSlice.js"
+import { useCounterStore } from "./store/store.jsx"
 
 // import App_LOGIN from "./practice-PROJECT/login/App_LOGIN.jsx"
 // import App_LOGIN from "./practice-PROJECT/login/App_LOGIN.jsx"
@@ -167,6 +168,8 @@ function App() {
   // }
   // const [count, setCount] = useState(0)
   //  const count = useSelector((state) => state.counter.value)
+
+  const count = useCounterStore((x)=>x.count2)
    
   return (
 
