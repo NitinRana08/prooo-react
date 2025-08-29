@@ -52,6 +52,8 @@ import Car1 from "./learning/useContext/Car1.jsx"
 import UseToggle1 from "./customHooks/useToggle1.jsx"
 import CHook1 from "./customHooks/CHook1.jsx"
 import { useState } from "react"
+import { useSelector,useDispatch } from "react-redux"
+import { increment } from "./redux/counter/counterSlice.js"
 
 // import App_LOGIN from "./practice-PROJECT/login/App_LOGIN.jsx"
 // import App_LOGIN from "./practice-PROJECT/login/App_LOGIN.jsx"
@@ -75,6 +77,7 @@ function App() {
 
 
 
+  // <h1>hola</h1>
   // const router = createBrowserRouter([
   //   {
   //     path: "/",
@@ -162,13 +165,19 @@ function App() {
   //   // This will throw an error
   //   throw new Error("Crashed!");
   // }
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
+  //  const count = useSelector((state) => state.counter.value)
+   
   return (
 
     <>
-      <button onClick={() => setCount(count + 1)}>click to +1 count</button>
-      <h2>{count}</h2>
-      <Counttt count={count}/>
+    <h2>hola</h2>
+      {/* <button onClick={() => setCount(count + 1)}>click to +1 count</button> */}
+      
+      {/* <button>-</button>
+      <h2>current count is {count}</h2>
+      <button onClick={()=>dispatchEvent(increment())}>+</button> */}
+      {/* <Counttt count={count}/> */}
       {/* <CHook1/> */}
       {/* <UseToggle1/> */}
       {/* <App_LOGIN/> */}
