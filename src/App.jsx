@@ -51,6 +51,7 @@ import CHILD from "./learning/callback/CHILD.jsx"
 import Car1 from "./learning/useContext/Car1.jsx"
 import UseToggle1 from "./customHooks/useToggle1.jsx"
 import CHook1 from "./customHooks/CHook1.jsx"
+import { useState } from "react"
 // import { useState } from "react"
 // import { useSelector,useDispatch } from "react-redux"
 // import { increment } from "./redux/counter/counterSlice.js"
@@ -170,14 +171,17 @@ function App() {
   //  const count = useSelector((state) => state.counter.value)
 
   // const count = useCounterStore((x)=>x.count2)
-   
+  const [count, setCount] = useState(0)
   return (
 
     <>
+      <button onClick={() => setCount(count + 1)}>+</button>
+      <h2>{count}</h2>
+       <button onClick={() => setCount(count - 1)}>-</button>
 
-    <h2>hola</h2>
+      {/* <h2>hola</h2> */}
       {/* <button onClick={() => setCount(count + 1)}>click to +1 count</button> */}
-      
+
       {/* <button>-</button>
       <h2>current count is {count}</h2>
       <button onClick={()=>dispatchEvent(increment())}>+</button> */}
