@@ -54,7 +54,8 @@ import CHook1 from "./customHooks/CHook1.jsx"
 import { useState } from "react"
 import { useSelector } from "react-redux"
 import { useDispatch } from "react-redux"
-import { increment, decrement, reset, incrementByAmount} from './features/counter/counterSlice.js'
+import { increment, decrement, reset, incrementByAmount } from './features/counter/counterSlice.js'
+import ReduxTestingProps from "./learning/reduxTestingProps.jsx"
 
 
 // import { useState } from "react"
@@ -179,22 +180,31 @@ function App() {
   // const [count, setCount] = useState(0)
 
 
-  const count = useSelector((state)=>state.counter.value)
-  const dispatch = useDispatch()
+  // const count = useSelector((state)=>state.counter.value)
+  // const dispatch = useDispatch()
+  const [count, setCount] = useState(0)
   return (
 
     <>
 
       <h1>hola</h1>
+      <button onClick={() => setCount(count + 1)}>+</button>
+      <ReduxTestingProps data_count={count}/>
+      <button onClick={() => setCount(count - 1)}>-</button>
+
+
+
+      {/* <h1>hola</h1>
       <div style={{textAlign: "center", marginTop: "50px"}}>
        <h1>redux toolkit counter</h1>
-       <button></button>
-       <button></button>
-       <button></button>
-       <button></button>
+       <button onClick={()=> dispatch(increment())}>Increment</button>
+       <button onClick={()=> dispatch(decrement())}>Decrement</button>
+       <button onClick={()=> dispatch(reset())}>Reset</button>
+       <button onClick={()=> dispatch(incrementByAmount(5))}>+5</button>
+       {count}
 
 
-      </div>
+      </div> */}
 
 
 
