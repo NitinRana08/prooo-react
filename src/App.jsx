@@ -52,8 +52,10 @@ import Car1 from "./learning/useContext/Car1.jsx"
 import UseToggle1 from "./customHooks/useToggle1.jsx"
 import CHook1 from "./customHooks/CHook1.jsx"
 import { useState } from "react"
-import { useDispatch, useSelector } from "react-redux"
-import { decrement, increment } from "./features/counter/counterSlice.js"
+import { useSelector } from "react-redux"
+import { useDispatch } from "react-redux"
+import { increment, decrement, reset, incrementByAmount} from './features/counter/counterSlice.js'
+
 
 // import { useState } from "react"
 // import { useSelector,useDispatch } from "react-redux"
@@ -178,25 +180,23 @@ function App() {
 
 
   const count = useSelector((state)=>state.counter.value)
-  const dispatch  = useDispatch()
-
-  function handleIncrementClick(){
-    dispatch(increment())
-
-  }
-
-  function handleDecrementClick(){
-    dispatch(decrement())
-    
-  }
-
+  const dispatch = useDispatch()
   return (
 
     <>
 
-      <button onClick={handleIncrementClick}>+</button>
-      <h2>{count}</h2>
-      <button onClick={handleDecrementClick}>-</button>
+      <h1>hola</h1>
+      <div style={{textAlign: "center", marginTop: "50px"}}>
+       <h1>redux toolkit counter</h1>
+       <button></button>
+       <button></button>
+       <button></button>
+       <button></button>
+
+
+      </div>
+
+
 
       {/* <h2>hola</h2> */}
       {/* <button onClick={() => setCount(count + 1)}>click to +1 count</button> */}
