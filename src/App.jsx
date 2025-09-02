@@ -188,9 +188,9 @@ function App() {
     <>
 
       <h1>hola</h1>
-      <button onClick={() => setCount(count + 1)}>+</button>
+      {/* <button onClick={() => setCount(count + 1)}>+</button>
       <ReduxTestingProps data_count={count}/>
-      <button onClick={() => setCount(count - 1)}>-</button>
+      <button onClick={() => setCount(count - 1)}>-</button> */}
 
 
 
