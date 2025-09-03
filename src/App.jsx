@@ -51,11 +51,12 @@ import CHILD from "./learning/callback/CHILD.jsx"
 import Car1 from "./learning/useContext/Car1.jsx"
 import UseToggle1 from "./customHooks/useToggle1.jsx"
 import CHook1 from "./customHooks/CHook1.jsx"
-import { useState } from "react"
+// import { useState } from "react"
 import { useSelector } from "react-redux"
 import { useDispatch } from "react-redux"
 import { increment, decrement, reset, incrementByAmount } from './features/counter/counterSlice.js'
 import ReduxTestingProps from "./learning/reduxTestingProps.jsx"
+import Appapi from './learning/api/Appapi.jsx'
 
 
 // import { useState } from "react"
@@ -184,17 +185,16 @@ function App() {
 
 // const count = useSelector((state)=>state.counter.value)
 // const dispatch = useDispatch()
-const [count, setCount] = useState(0)
+// const [count, setCount] = useState(0)
 return (
 
   <>
 
 
-  <Appapi/>
 
 
-
-    <h1>hola</h1>
+    {/* <h1>hola</h1> */}
+    <Appapi/>
     {/* <button onClick={() => setCount(count + 1)}>+</button>
       <ReduxTestingProps data_count={count}/>
       <button onClick={() => setCount(count - 1)}>-</button> */}
