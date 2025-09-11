@@ -16,6 +16,7 @@ function Appapi(){
     return(
         <>
         <h2>hola ji</h2>
+        <h2>hola</h2>
 
         {data ? data.map((e)=> <PostCard  title={e.title} body={e.body} />) : <p>No Data :/</p> }
   
